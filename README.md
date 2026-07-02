@@ -31,7 +31,7 @@
 - PWA(`manifest.webmanifest`, `sw.js` による stale-while-revalidate キャッシュ)
 - 教材データは `js/data.js` に集約(AI マルチエージェントワークフローで生成・ファクトチェック済み)
 - アイコンは `tools/gen_icons.py`(Python 標準ライブラリのみ)で生成
-- `main` ブランチへの push で GitHub Actions が GitHub Pages へ自動デプロイ
+- `main` ブランチへの push で GitHub Pages が自動的に再配信(ブランチデプロイ方式)
 
 ## 🛠 ローカルでの動作確認
 
