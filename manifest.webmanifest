@@ -1,0 +1,15 @@
+{
+  "name": "分析基盤キャッチアップ",
+  "short_name": "分析基盤",
+  "description": "マルチエージェント分析基盤(Snowflake / Spark / Dataiku / Codex)を1週間でキャッチアップする学習アプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101322",
+  "theme_color": "#4f6bfd",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
