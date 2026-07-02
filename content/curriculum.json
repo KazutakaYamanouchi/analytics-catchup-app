@@ -1,5 +1,4 @@
-/* 教材データ(自動生成)— 編集は content/curriculum.json へ。生成: python3 tools/build_data.py */
-const CURRICULUM = [
+[
   {
     "day": 1,
     "topic": "データ分析基盤の全体像",
@@ -171,7 +170,7 @@ const CURRICULUM = [
     "day": 2,
     "topic": "Snowflake 入門",
     "content": {
-      "title": "Snowflake 入門",
+      "title": "Day 2: Snowflake 入門",
       "subtitle": "分離アーキテクチャから権限・接続まで、クラウドDWHの要点を一気読み",
       "estMinutes": 15,
       "sections": [
@@ -342,7 +341,7 @@ const CURRICULUM = [
     "day": 3,
     "topic": "Apache Spark 入門",
     "content": {
-      "title": "Spark入門",
+      "title": "Day 3: Spark入門",
       "subtitle": "巨大データを分散処理する仕組みとSnowflakeとの使い分け",
       "estMinutes": 15,
       "sections": [
@@ -509,7 +508,7 @@ const CURRICULUM = [
     "day": 4,
     "topic": "Dataiku 入門",
     "content": {
-      "title": "Dataiku 入門",
+      "title": "Day 4: Dataiku 入門",
       "subtitle": "GUIとコードで組み立てる分析パイプラインの中枢",
       "estMinutes": 15,
       "sections": [
@@ -652,6 +651,10 @@ const CURRICULUM = [
         {
           "term": "実行エンジン",
           "def": "レシピの計算をどこで行うかの選択肢。DSSエンジン、In-database SQLエンジン、Sparkエンジンなどから選ぶ。"
+        },
+        {
+          "term": "プッシュダウン",
+          "def": "処理をデータのある場所(Snowflakeなど)に押し込んで実行すること。データ移動を減らして高速化できる。"
         },
         {
           "term": "ラボ(Lab)",
@@ -840,7 +843,7 @@ const CURRICULUM = [
     "day": 6,
     "topic": "マルチエージェント分析基盤のアーキテクチャ",
     "content": {
-      "title": "マルチエージェント分析基盤",
+      "title": "Day 6: マルチエージェント分析基盤",
       "subtitle": "オーケストレータ→Codex→Spark→Snowflakeの全体像をつかむ",
       "estMinutes": 18,
       "sections": [
@@ -1007,7 +1010,7 @@ const CURRICULUM = [
     "day": 7,
     "topic": "総復習と実務準備",
     "content": {
-      "title": "総復習と実務準備",
+      "title": "Day 7: 総復習と実務準備",
       "subtitle": "1週間の知識を1枚の地図にして、初日から動ける自分になる",
       "estMinutes": 15,
       "sections": [
@@ -1154,8 +1157,16 @@ const CURRICULUM = [
           "def": "一定時間使われていないウェアハウスを自動停止して課金を止めるSnowflakeの機能。コスト管理の基本設定。"
         },
         {
+          "term": "プッシュダウン",
+          "def": "処理をデータのある場所(Snowflakeなど)に送り込んで実行させる方式。データ移動が減り、速くて安くなる。"
+        },
+        {
           "term": "データ品質",
           "def": "データが期待どおりの状態(欠損・重複・異常値がないなど)であること。行数チェックやテストで継続的に検証する。"
+        },
+        {
+          "term": "dbt",
+          "def": "SQLでデータ変換を記述し、テスト・ドキュメント・依存関係の管理までできる変換ツール。Snowflakeと相性がよい。"
         },
         {
           "term": "データリネージ",
@@ -1164,4 +1175,4 @@ const CURRICULUM = [
       ]
     }
   }
-];
+]
